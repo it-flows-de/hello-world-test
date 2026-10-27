@@ -12,7 +12,7 @@
 
 set -euo pipefail
 
-VERSION="1.0.0"
+VERSION="1.0.1"
 REQUIRED_CONFIG_VERSION="1"
 
 # The only paths derived in the script: its own directory and, by convention,
@@ -72,7 +72,7 @@ source "${CONFIG_FILE}"
 
 # --- Main logic ---
 echo "${GREETING_TEXT:-Hello}, ${GREETING_NAME}!"
-echo "(${SCRIPT_NAME} version ${VERSION})"
+echo "Running ${SCRIPT_NAME}, version ${VERSION}"
 if [[ -n "${GREETING_SUFFIX:-}" ]]; then
     echo "${GREETING_SUFFIX}"
 fi
