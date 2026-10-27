@@ -1,0 +1,33 @@
+#===============================================================================
+# hello-world-test.config - configuration for hello-world-test.sh
+# Setup:  cp hello-world-test.config.example hello-world-test.config, edit with
+#         vi, chmod 660.
+# Syntax: sourced by bash (it is code): KEY="value", no spaces around the "=".
+# No secrets here.
+#===============================================================================
+
+# Config format version. Must match the script, otherwise it aborts (exit code 3).
+# Do not change by hand; adjust it only after following the release notes.
+CONFIG_VERSION="1"
+
+#===============================================================================
+# 1. REQUIRED - set these for every project
+#===============================================================================
+
+# GREETING_NAME: who is greeted. Format: any text. Example: "World"
+GREETING_NAME="World"
+
+#===============================================================================
+# 2. OPTIONAL - empty means "not used"
+#===============================================================================
+
+# GREETING_SUFFIX: extra line printed after the greeting. Format: any text.
+# Example: "Have a nice day."
+GREETING_SUFFIX=""
+
+#===============================================================================
+# 3. DEFAULTS - change only in individual cases
+#===============================================================================
+
+# GREETING_TEXT: the greeting word. Format: any text. Default: "Hello"
+GREETING_TEXT="Hello"
